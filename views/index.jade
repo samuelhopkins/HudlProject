@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    .ui.container.segment.padded
+        h1.ui.horizontal.divider.header
+            | Just Visiting
+        .ui.segment
+            .ui.grid
+                .eight.wide.column
+                    div(class="ui sub header") Travel Destination
+                    div(class="ui fluid search dropdown start" id="start-predictions")
+                        div(class="default text")
+                            | Search Destination
+                        div(id="starts" class="menu transition hidden")
+                .eight.wide.column
+                    div(data-value="drinks" class="ui button" tabindex="0")
+                        | Drinks
+                    div(data-value="food" class="ui button" tabindex="0")
+                        | Food
+                    div(data-value="entertainment" class="ui button" tabindex="0")
+                        | Entertainment
+                    div(data-value="fitness" class="ui button" tabindex="0")
+                        | Fitness
+
+
+        .ui.segment.map
+            div(id="map")
+
